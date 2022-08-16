@@ -5,6 +5,7 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"
 alphabetCaps = []
 chars = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "}", "[", "]", "|", ":", ";", "\"", "\'", "<", ">", ",", ".", "?", "/"]
 password = ''
+string = ""
 num = 0
 selection = numbers + alphabetCaps + alphabet + chars
 
@@ -14,9 +15,8 @@ for i in alphabet :
 passwordLength = int(input("Please enter the length of your password: "))
 
 while num < passwordLength:
-    str(selection) + password
-    #password.append(random.choice(selection))
+    string = random.choice(selection)
+    password = str(string) + password
     num += 1
-random.shuffle(password)
 
 print(password)
