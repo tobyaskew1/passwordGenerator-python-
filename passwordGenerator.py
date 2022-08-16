@@ -7,10 +7,11 @@ chars = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "
 password = ''
 string = ""
 num = 0
-selection = numbers + alphabetCaps + alphabet + chars
 
 for i in alphabet :
     alphabetCaps.append(i.upper())
+
+selection = numbers + alphabetCaps + alphabet + chars
 
 passwordLength = int(input("Please enter the length of your password: "))
 
